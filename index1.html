@@ -46,9 +46,28 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <!--添加心形预加载动画-->
+    <link rel="stylesheet" href="/css/redheart_preloader.css">
+    <script src="/js/jquery-3.6.0.min.js"></script>
   </head>
   <body>
 
+    <!--添加心形预加载动画-->
+	<div class="preloader-wrapper">
+		<div class="red-heart-container">
+			<div class="preloader">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<div class="shadow"></div>
+		</div>	
+	</div>
+	<script>
+		$(window).on("load",function(){
+			$(".preloader-wrapper").fadeOut("slow");
+		})
+	</script>
     <!-- Main Navigation 
     ================================================== -->
     <nav id="menu" class="navbar navbar-default navbar-fixed-top">
