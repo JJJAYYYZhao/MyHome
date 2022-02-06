@@ -96,11 +96,17 @@
     animation: shadow 2.3s cubic-bezier(0.75,0,0.5,1) infinite;
 
 }
+
+.red-heart-container .loading{
+    position: relative;
+    display: block;
+    top: 40px;
+}
 @keyframes shadow {
     50%{
         border-color: #f2f2f2;
         transform:scale(0.5) ;
     }
 
-
 }
+
